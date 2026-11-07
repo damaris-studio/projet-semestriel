@@ -1,5 +1,5 @@
-name: Question ou discussion
-description: Poser une question ou lancer une discussion ciblée
+name: Question or discussion
+description: Ask a question or start a focused discussion
 title: "[Question]: "
 labels:
   - question
@@ -7,24 +7,24 @@ body:
   - type: markdown
     attributes:
       value: |
-        Consultez la documentation et les discussions existantes avant d’ouvrir une nouvelle question.
-        Pour les sujets sensibles, utilisez le canal de contact privé indiqué dans le projet.
+        Please search the documentation and existing discussions before opening a new question.
+        For sensitive topics, use the private contact channel documented in the repository.
   - type: textarea
     id: question
     attributes:
       label: Question
-      description: Que souhaitez-vous comprendre ou discuter ?
+      description: What would you like to understand or discuss?
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Contexte
-      description: Partagez la configuration concernée, les solutions essayées et les liens utiles.
+      label: Context
+      description: Share the relevant setup, attempted solutions, and links.
     validations:
       required: true
   - type: textarea
     id: additional
     attributes:
-      label: Informations complémentaires
-      description: Ajoutez tout élément susceptible d’aider les autres à répondre.
+      label: Additional information
+      description: Add anything else that may help others answer.

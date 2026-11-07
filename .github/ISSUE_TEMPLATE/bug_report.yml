@@ -1,5 +1,5 @@
-name: Signaler un bug
-description: Signaler un problème reproductible
+name: Bug report
+description: Report a reproducible problem
 title: "[Bug]: "
 labels:
   - bug
@@ -7,58 +7,58 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de prendre le temps de signaler ce bug.
+        Thanks for taking the time to report a bug.
 
-        Recherchez d’abord les issues existantes et supprimez toute information sensible
-        des logs, captures d’écran et exemples avant d’envoyer votre signalement.
+        Please search existing issues first and remove any sensitive information
+        from logs, screenshots, and examples before submitting.
   - type: textarea
     id: summary
     attributes:
-      label: Résumé
-      description: Décrivez le problème en quelques phrases claires.
-      placeholder: "Décrivez clairement et brièvement ce qui ne fonctionne pas."
+      label: Summary
+      description: Describe the problem in a few clear sentences.
+      placeholder: "A clear and concise description of what went wrong."
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Étapes pour reproduire le problème
-      description: Indiquez les étapes minimales qui permettent de reproduire le problème de manière fiable.
+      label: Steps to reproduce
+      description: List the smallest set of steps that reliably reproduces the problem.
       placeholder: |
-        1. Configurer ...
-        2. Exécuter ...
-        3. Observer ...
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Comportement attendu
-      description: Quel résultat attendiez-vous ?
+      label: Expected behavior
+      description: What did you expect to happen?
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Comportement observé
-      description: Que s’est-il passé à la place ? Ajoutez le message d’erreur complet si nécessaire.
+      label: Actual behavior
+      description: What happened instead? Include the complete error message when relevant.
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Version ou commit
-      description: Quelle version, quel commit ou quelle version du package est concerné ?
-      placeholder: "v1.2.3 ou abc1234"
+      label: Version or commit
+      description: Which release, commit, or package version is affected?
+      placeholder: "v1.2.3 or abc1234"
   - type: input
     id: environment
     attributes:
-      label: Environnement
-      description: Indiquez le système d’exploitation, l’environnement d’exécution, le navigateur et tout autre détail utile.
-      placeholder: "Système, version de l’environnement, cible de déploiement et configuration pertinente"
+      label: Environment
+      description: Include the operating system, runtime, browser, or other relevant details.
+      placeholder: "OS, runtime version, deployment target, and relevant configuration"
   - type: textarea
     id: logs
     attributes:
-      label: Logs et contexte complémentaire
-      description: Ajoutez les logs, captures d’écran, liens ou une reproduction minimale pertinents. Masquez d’abord les secrets.
+      label: Logs and additional context
+      description: Add relevant logs, screenshots, links, or a minimal reproduction. Redact secrets first.
       render: shell

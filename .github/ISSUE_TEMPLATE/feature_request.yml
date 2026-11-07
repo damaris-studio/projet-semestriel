@@ -1,5 +1,5 @@
-name: Proposer une fonctionnalité
-description: Suggérer une amélioration ou une nouvelle fonctionnalité
+name: Feature request
+description: Suggest an improvement or new capability
 title: "[Feature]: "
 labels:
   - enhancement
@@ -7,38 +7,38 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci de contribuer à l’amélioration de ce projet.
+        Thanks for helping improve this project.
 
-        Recherchez d’abord les issues existantes. Une proposition de fonctionnalité
-        doit mettre l’accent sur le problème et sa valeur, sans imposer une seule solution.
+        Please search existing issues first. Feature requests should focus on
+        the problem and its value rather than prescribing only one implementation.
   - type: textarea
     id: problem
     attributes:
-      label: Problème
-      description: Quel problème cette modification résoudrait-elle et qui est concerné ?
-      placeholder: "En tant que ..., j’ai besoin de ..., parce que ..."
+      label: Problem
+      description: What problem would this change solve, and who is affected?
+      placeholder: "As a ..., I need ..., because ..."
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Solution proposée
-      description: Décrivez le comportement ou le résultat que vous aimeriez obtenir.
+      label: Proposed solution
+      description: Describe the behavior or outcome you would like to see.
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Solutions alternatives envisagées
-      description: Quels contournements ou quelles autres approches avez-vous essayés ?
+      label: Alternatives considered
+      description: What workarounds or alternative approaches have you tried?
   - type: textarea
     id: context
     attributes:
-      label: Contexte complémentaire
-      description: Ajoutez des exemples, captures d’écran, liens ou notes d’implémentation.
+      label: Additional context
+      description: Add examples, screenshots, links, or implementation notes.
   - type: checkboxes
     id: contribution
     attributes:
       label: Contribution
       options:
-        - label: Je serais prêt(e) à contribuer à cette modification.
+        - label: I would be willing to contribute this change.

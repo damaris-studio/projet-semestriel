@@ -1,63 +1,63 @@
-# Contribuer
+# Contributing
 
-Merci d’envisager une contribution à ce **Projet Semestriel**. Ce guide constitue un
-point de départ : remplacez les champs et les commandes d’exemple par ceux utilisés
-par votre projet.
+Thank you for considering a contribution to **[PROJECT NAME]**. This guide is a
+starting point, replace the placeholders and commands with the ones used by
+your project.
 
-## Avant de commencer
+## Before you start
 
-1. Lisez le [code de conduite](./CODE_OF_CONDUCT.md), s’il est disponible.
-2. Recherchez les issues et les pull requests existantes.
-3. Pour les changements importants, ouvrez une issue ou une discussion avant de commencer.
-4. N’incluez jamais d’identifiants, de données personnelles ou de contenu propriétaire.
+1. Read the [Code of Conduct](./CODE_OF_CONDUCT.md), if available.
+2. Search existing issues and pull requests.
+3. For substantial changes, open an issue or discussion before implementing it.
+4. Never include credentials, personal data, or proprietary material.
 
-## Configuration du développement
+## Development setup
 
 ```shell
-# Remplacez ces commandes par les étapes de configuration du projet.
-git clone https://github.com/damaris-studio/projet-semestriel.git
-cd projet-semestriel
-# installer les dépendances
-# lancer la commande de développement
+# Replace these commands with the project's setup steps.
+git clone https://github.com/aaimeraud/REPOSITORY.git
+cd REPOSITORY
+# install dependencies
+# run the development command
 ```
 
-Documentez ici les environnements d’exécution, variables d’environnement, services
-et contraintes de plateforme nécessaires. Conservez les secrets dans des fichiers
-d’environnement locaux qui ne sont pas commités.
+Document required runtimes, environment variables, services, and platform
+constraints here. Keep secrets in local environment files that are not
+committed.
 
-## Apporter des modifications
+## Making changes
 
-- Gardez les pull requests ciblées et faciles à relire.
-- Privilégiez les commits courts et facilement combinables.
-- Ajoutez ou mettez à jour les tests lorsque le comportement change.
-- Mettez à jour la documentation et les exemples lorsque le comportement public change.
-- Respectez les conventions existantes de formatage, de nommage et de gestion des erreurs.
-- N’ajoutez pas de fichiers générés, sauf si le projet l’exige.
+- Keep pull requests focused and easy to review.
+- Prefer small, composable commits.
+- Add or update tests for behavior changes.
+- Update documentation and examples when the public behavior changes.
+- Follow the existing formatting, naming, and error-handling conventions.
+- Do not add generated files unless the repository requires them.
 
-## Messages de commit
+## Commit messages
 
-Utilisez les [Conventional Commits](https://www.conventionalcommits.org/) :
+Use [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```text
 <type>(<optional scope>): <imperative description>
 ```
 
-Types courants :
+Common types:
 
-| Type       | Utilisation                                          |
-| ---------- | ---------------------------------------------------- |
-| `feat`     | Nouvelle fonctionnalité visible                      |
-| `fix`      | Correction d’un bug                                  |
-| `docs`     | Modification de la documentation uniquement          |
-| `refactor` | Modification du code sans changement de comportement |
-| `test`     | Ajout ou mise à jour de tests                        |
-| `build`    | Modification du système de build ou des dépendances  |
-| `ci`       | Modification de l’intégration continue               |
-| `chore`    | Maintenance sans impact pour les utilisateurs        |
-| `perf`     | Amélioration des performances                        |
-| `revert`   | Annulation d’un commit précédent                     |
+| Type       | Use for                                |
+| ---------- | -------------------------------------- |
+| `feat`     | A new user-facing capability           |
+| `fix`      | A bug fix                              |
+| `docs`     | Documentation-only changes             |
+| `refactor` | Code changes without behavior changes  |
+| `test`     | Adding or updating tests               |
+| `build`    | Build system or dependency changes     |
+| `ci`       | Continuous integration changes         |
+| `chore`    | Maintenance that does not affect users |
+| `perf`     | Performance improvements               |
+| `revert`   | Reverting a previous commit            |
 
-Exemples :
+Examples:
 
 ```text
 feat(api): add pagination to the resource endpoint
@@ -65,28 +65,28 @@ fix(parser): handle empty input
 docs: clarify the local development setup
 ```
 
-Utilisez la même convention pour les titres de pull request. Gardez-les courts,
-précis et formulés à l’impératif. Ajoutez `!` après le type ou le périmètre pour
-signaler une rupture de compatibilité, par exemple `feat(api)!: change the response format`.
+Use the same convention for pull request titles. Keep titles short, specific,
+and written in the imperative mood. Add `!` after the type or scope for a
+breaking change, for example `feat(api)!: change the response format`.
 
 ## Pull requests
 
-Utilisez le modèle de pull request du projet. Une bonne pull request comprend :
+Use the repository pull request template. A good pull request includes:
 
-- un résumé et une motivation clairs
-- l’issue ou la discussion associée
-- les tests et étapes de validation
-- la documentation des changements visibles par les utilisateurs
-- les notes de migration en cas de rupture de compatibilité.
+- a clear summary and motivation;
+- the related issue or discussion;
+- tests and validation steps;
+- documentation for user-visible changes;
+- migration notes for breaking changes.
 
-Les responsables du projet peuvent demander des modifications, regrouper les commits
-ou ajuster les labels avant la fusion. Gardez les discussions constructives et
-traitez explicitement les commentaires de revue.
+Maintainers may request changes, squash commits, or adjust labels before
+merging. Please keep discussions constructive and resolve review comments
+explicitly.
 
-## Signaler un bug ou proposer une fonctionnalité
+## Reporting bugs and requesting features
 
-Utilisez les formulaires d’issue dans [`.github/ISSUE_TEMPLATE/`](./.github/ISSUE_TEMPLATE/).
-Pour un bug, fournissez un cas de reproduction minimal pour une fonctionnalité,
-expliquez le problème à résoudre. Signalez les vulnérabilités de sécurité via le
-canal privé décrit dans [`SECURITY.md`](./SECURITY.md), si ce fichier existe ne
-publiez pas de détails d’exploitation dans une issue publique.
+Use the issue forms in [`.github/ISSUE_TEMPLATE/`](./.github/ISSUE_TEMPLATE/).
+Include a minimal reproduction for bugs and explain the underlying problem for
+feature requests. Report security vulnerabilities through the private channel
+described in [`SECURITY.md`](./SECURITY.md), when that file exists; do not
+publish exploit details in a public issue.

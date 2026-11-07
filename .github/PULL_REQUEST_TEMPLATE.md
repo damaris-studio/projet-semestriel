@@ -1,47 +1,47 @@
 <!--
-  Avant d’ouvrir une pull request :
-  - Utilisez un titre Conventional Commit clair : type(scope): résumé à l’impératif
-  - Gardez la modification ciblée et ajoutez un lien vers l’issue concernée.
-  - Exécutez les vérifications documentées et supprimez les secrets des logs et captures d’écran.
+  Before opening a pull request:
+  - Use a clear Conventional Commit title: type(scope): imperative summary
+  - Keep the change focused and link the relevant issue.
+  - Run the documented checks and remove secrets from logs and screenshots.
 -->
 
-## Résumé
+## Summary
 
-<!-- Que fait cette modification ? Gardez cette section concise. -->
+<!-- What does this change do? Keep this section concise. -->
 
-## Motivation et contexte
+## Motivation and context
 
-<!-- Pourquoi cette modification est-elle nécessaire ? Ajoutez « Closes #123 » si nécessaire. -->
+<!-- Why is this change needed? Link related issues with "Closes #123" when applicable. -->
 
 Closes #
 
-## Modifications
+## Changes
 
--
+- 
 
 ## Validation
 
-- [ ] Tests ajoutés ou mis à jour lorsque nécessaire
-- [ ] Les tests, vérifications de lint et contrôles de formatage pertinents passent
-- [ ] La documentation a été mise à jour si nécessaire
-- [ ] J’ai testé manuellement le comportement concerné
+- [ ] Tests added or updated where appropriate
+- [ ] Relevant tests, linting, and formatting checks pass
+- [ ] Documentation updated where needed
+- [ ] I have manually tested the affected behavior
 
-## Captures d’écran ou enregistrements
+## Screenshots or recordings
 
 <!--
-  Pour les changements visibles par les utilisateurs, ajoutez des captures d’écran ou des enregistrements avant/après.
-  Supprimez cette section si elle ne s’applique pas.
+  For user-facing changes, add before/after screenshots or recordings.
+  Delete this section when it does not apply.
 -->
 
-## Ruptures de compatibilité
+## Breaking changes
 
-<!-- Décrivez les étapes de migration et les problèmes de compatibilité, ou écrivez « Aucune ». -->
+<!-- Describe migration steps, compatibility concerns, or write "None". -->
 
-Aucune
+None
 
-## Checklist de revue
+## Review checklist
 
-- [ ] La modification respecte les conventions du projet.
-- [ ] La modification reste limitée au périmètre indiqué.
-- [ ] La gestion des erreurs et les cas limites sont couverts.
-- [ ] Aucun identifiant, donnée personnelle ni artefact généré n’est inclus.
+- [ ] The change follows the repository's conventions.
+- [ ] The change is limited to the stated scope.
+- [ ] Error handling and edge cases are covered.
+- [ ] No credentials, personal data, or generated artifacts are included.
