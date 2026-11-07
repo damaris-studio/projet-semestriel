@@ -1,0 +1,30 @@
+name: Question or discussion
+description: Ask a question or start a focused discussion
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the documentation and existing discussions before opening a new question.
+        For sensitive topics, use the private contact channel documented in the repository.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to understand or discuss?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Share the relevant setup, attempted solutions, and links.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add anything else that may help others answer.

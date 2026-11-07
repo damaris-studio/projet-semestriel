@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve this project.
+
+        Please search existing issues first. Feature requests should focus on
+        the problem and its value rather than prescribing only one implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this change solve, and who is affected?
+      placeholder: "As a ..., I need ..., because ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or outcome you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What workarounds or alternative approaches have you tried?
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, screenshots, links, or implementation notes.
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to contribute this change.
